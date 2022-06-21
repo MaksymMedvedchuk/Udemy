@@ -4,17 +4,20 @@ public class AverageGradePrinter {
     public void printerAverageGrade() {
     }
 
-    double averageInMath = 10.3;
-    double averageInEconomy = 9.8;
-    double averageInEnglish = 6.7;
+    double averageInMath;
+    double averageInEconomy;
+    double averageInEnglish;
 
-    double averageGrade() {
+    void averageGrade(double averageInEnglish, double averageInEconomy, double averageInMath) {
         double result = (averageInEconomy + averageInEnglish + averageInMath) / 3;
-        return result;
+        System.out.println(result);
+
 
     }
 
+
 }
+
 
 
 

@@ -16,11 +16,12 @@ public class TwoClassCreator {
         TwoClassCreator secondStudent = new TwoClassCreator();
         TwoClassCreator thirdStudent = new TwoClassCreator();
 
+
         firstStudent.studentTicketNumber = 987456;
         firstStudent.studentName = "Maksim";
         firstStudent.studentSurname = "Medvedchuk";
         firstStudent.yearOfStudy = 2012;
-        firstStudent.averageGradeInMath = 11.1;
+        firstStudent.averageGradeInMath = 11.1 ;
         firstStudent.averageGradeInEconomy = 9.8;
         firstStudent.averageGradeInEnglish = 7.1;
 
