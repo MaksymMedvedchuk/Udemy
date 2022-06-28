@@ -9,13 +9,13 @@ public class Balance {
 
     private int balance;
 
-    void replenishBalance(int sum) {
-        balance += sum;
+    void replenishBalance(int amount) {
+        balance += amount;
 
     }
 
-    void reductBalance(int sum) {
-        balance -= sum;
+    void reductBalance(int amount) {
+        balance -= amount;
 
     }
 

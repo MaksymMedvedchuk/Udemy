@@ -14,12 +14,9 @@ public class Student {
         this.age = age;
         this.course = course;
     }
-
     public Student(int studentId, String name, String surname, String course) {
         this(studentId, name, surname, 0, course);
-
     }
-
     public Student() {
     }
 }

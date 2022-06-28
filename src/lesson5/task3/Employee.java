@@ -14,35 +14,11 @@ public class Employee {
         this.age = age;
         this.salary = salary;
         this.department = department;
-        //Ми створюємо конструктор для полегшення роботи: якщо у нас буде декілька об'єктів класса з однаковими атрибутами?
     }
 
-    public int increaseSalary() {
+    public void doubleSalary() {
         salary *= 2;
-        return salary;
-        //return salary *= 2;
-        //без різниці як писати?
-
     }
-
-    public void printNewSalary() {
-        System.out.print("Worker " + this.surname + " from department " + this.department + " with id card " +
-                this.id + " get ");
-        System.out.println(increaseSalary());
-        System.out.println();
-    }
-
-
-
-
-
-
-
-
-
-
-
-
 
     public int getId() {
         return id;
