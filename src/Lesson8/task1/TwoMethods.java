@@ -2,7 +2,7 @@ package Lesson8.task1;
 
 public class TwoMethods {
 
-    public static int printMultiply(int firstArg, int secondArg, int thirdArg) {
+    public static int Multiply(int firstArg, int secondArg, int thirdArg) {
         return firstArg * secondArg * thirdArg;
     }
 
