@@ -1,26 +1,48 @@
 package Lesson11;
 
 public class Car {
-    private String color;
+    public String color;  // Чому якщо роблю поле приватним, компілятор видає помилку?
     private String motor;
-    public int quantityDoors;
+    public int doorsQuantity; // Чому якщо роблю поле приватним, компілятор видає помилку?
 
-    public Car(String color, String motor, int quantityDoors) {
+    public Car(String color, String motor, int doorsQuantity) {
         this.color = color;
         this.motor = motor;
-        this.quantityDoors = quantityDoors;
+        this.doorsQuantity = doorsQuantity;
     }
 
-    public int changeQuantityDoors(int newQuantityDoors) {
-        newQuantityDoors = newQuantityDoors - 2;
-        return newQuantityDoors;
+    public void changeDoorsQuantity(int newDoorsQuantity) {
+        this.doorsQuantity = newDoorsQuantity;
     }
 
-    public static void changeColor(Car car1, Car car2) {
-        Car car3 = car1;
-        car1 = car2;
-        car2 = car3;
-        System.out.println(car1.color);
-        System.out.println(car2.color);
+    public void changeColor(Car car1, Car car2) {
+       String color = car1.color;
+        car1.color = car2.color;
+        car2.color = color;
+
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getMotor() {
+        return motor;
+    }
+
+    public void setMotor(String motor) {
+        this.motor = motor;
+    }
+
+    public int getDoorsQuantity() {
+        return doorsQuantity;
+    }
+
+    public void setDoorsQuantity(int doorsQuantity) {
+        this.doorsQuantity = doorsQuantity;
     }
 }
