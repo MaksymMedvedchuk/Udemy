@@ -1,24 +1,19 @@
 package Test;
 
 public class BankAccountTest {
-
-    int summa (int a, int b, int c) {
-        int result = a + b + c;
-        return result;
-    }
+    public static void main(String[] args) {
 
 
-
-
-
-
-    class Test1{
-
-            BankAccountTest ba = new BankAccountTest();
-
+        int i = 1;
+        do {
+            System.out.println(i);
+            i++;
         }
-    }
+        while (i <= 10);
 
+
+    }
+}
 
 
 

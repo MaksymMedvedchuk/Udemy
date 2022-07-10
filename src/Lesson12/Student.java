@@ -20,17 +20,21 @@ public class Student {
         }
     }
 
+
     public static void printEqualityInEquality(Student student1, Student student2) {
-        if (student1.name == student2.name)
-        if (student1.age == student2.age)
-        if (student1.course == student2.course)
-        System.out.println("Information about students is the same");
-        else
-        System.out.println("The names of the students are different, but the course and age are the same");
-        else
-        System.out.println("The name and age of the students are the same, but the course is different");
-        else
-        System.out.println("The name and course of the students are the same, but the age is different");
+        if (student1.name.equals(student2.name)) {
+            if (student1.age == student2.age) {
+                if (student1.course == student2.course) {
+                    System.out.println("Information about students is the same");
+                } else {
+                    System.out.println("The students names and ages are the same, but the courses are different");
+                }
+            } else {
+                System.out.println("The names of the students are the same, but the ages are different");
+            }
+        } else {
+            System.out.println("The names of students are different");
+        }
     }
 
     public String getName() {
