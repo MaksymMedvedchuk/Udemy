@@ -11,10 +11,6 @@ public class Car {
         this.doorsQuantity = doorsQuantity;
     }
 
-   //public void changeDoorsQuantity(int newDoorsQuantity) {
-        //this.doorsQuantity = newDoorsQuantity;
-    //}
-
     public static  void changeColor(Car car1, Car car2) {
        String color = car1.color;
         car1.color = car2.color;
