@@ -1,29 +1,17 @@
 package lesson18;
 
 public class StringBuilderTest {
-    public int age1;
 
-    public StringBuilderTest(int age1) {
-        this.age1 = age1;
-    }
-
-    public static boolean printParametersEquality(int i1, int i2) {
-        if (i1 == i2) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public int getAge1() {
-        return age1;
-    }
-
-    public void setAge1(int age1) {
-        this.age1 = age1;
+    public static boolean printParametersEquality(StringBuilder arg1, StringBuilder arg2) {
+//        if (arg1 == arg2) { завжди буде false, бо це два різних обєкта і вони ссилаються на різну адресу, також так
+//                            буде з equals, він працює як ==, не так як в класі String
+//            return true;
+//        } else
+//            return false;
+//    }
+        if (arg1.equals(arg2)) {
+            return true; // true буде тільки в тому випадку, якщо обєкт StringBuilder зрівнювати самим з собою
+        } else ;
+        return false;
     }
 }
-
-
-
-

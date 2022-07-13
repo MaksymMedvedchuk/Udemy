@@ -11,11 +11,10 @@ public class Time {
             MIDDLE:
             do {
                 minute++;
-                if (hour > 1 && minute % 10 == 0) {
+                if (hour > 1) {
                     break OUTER;
                 }
                 int second = 0;
-                INNER:
                 while (second < 60) {
                     if (second * hour > minute) {
                         continue MIDDLE;
