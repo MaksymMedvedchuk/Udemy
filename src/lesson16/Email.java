@@ -1,17 +1,20 @@
 package lesson16;
 
 public class Email {
+    private static final char AT = '@';
+    private static final char DOT = '.';
+    private static final char SEMICOLON = ';';
 
-    public void printEmailInfo(String arg) {
-        int arg1 = 0; //позиція символу @
-        int arg2 = 0; //позиція символу .  щоб між . та @ знайти substring
-        int arg3 = 0; //позиція символу ; щоб розуміть коли закінчувати пошук substring
+    public void printEmailInfo(String inputString) {
+        int atPosition;
+        int dotPosition;
+        int semicolonPosition = 0; //позиція символу ; щоб розуміть коли закінчувати пошук substring
 
-        while (arg3 < arg.length() -1 ) { //-1 - довжина string на -1 индекс менше 40 (39), щоб цикл заверш. на 39 инд
-            arg1 = arg.indexOf('@', arg3);//шукаю @ з 0 символу = 2
-            arg2 = arg.indexOf('.', arg3); // шукаю . з 0 символу = 8
-            arg3 = arg.indexOf(';', arg3 + 1); //+1 для що шукало не з ";", а з наступного елемкнту, на крок вперед
-            System.out.println(arg.substring(arg1 + 1, arg2));  //arg2 8 індекс "." не виводиться на єкран
+        while (semicolonPosition < inputString.length() -1 ) { //-1 - довжина string на -1 индекс менше 40 (39), щоб цикл заверш. на 39 инд
+            atPosition = inputString.indexOf(AT, semicolonPosition);//шукаю @ з 0 символу = 2
+            dotPosition = inputString.indexOf(DOT, semicolonPosition); // шукаю . з 0 символу = 8
+            semicolonPosition = inputString.indexOf(SEMICOLON, semicolonPosition + 1); //+1 для що шукало не з ";", а з наступного елемкнту, на крок вперед
+            System.out.println(inputString.substring(atPosition + 1, dotPosition));  //dotPosition 8 індекс "." не виводиться на єкран
         }
     }
 }
