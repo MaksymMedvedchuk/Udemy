@@ -4,7 +4,8 @@ public class ArrayClass {
 
     public static void printArray(String[][] inputArray) {
         System.out.print("{ ");
-        for (int i = 0; i < inputArray.length; i++) {            //array.length довжина двомірного масиву
+        int i = 0;
+        while (i < inputArray.length) {            //array.length довжина двомірного масиву
             System.out.print("{");
             for (int j = 0; j < inputArray[i].length; j++) {     //array[i].length це довжина нульвого одномірного масиву, його довжина == 2
                 if (j != inputArray[i].length - 1) {             //якщо inputArray[i].length(2)-1 не == j(0) // (якщо 1 !=1 то false і перехід еа else?)
@@ -18,8 +19,9 @@ public class ArrayClass {
                 }else {
                     System.out.print("}");
                 }
-            }
-            System.out.println(" }");
+            i++;
+        }
+        System.out.println(" }");
         }
     }
 
