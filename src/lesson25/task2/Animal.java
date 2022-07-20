@@ -6,7 +6,7 @@ public class Animal {
 
     public Animal(int eyes) {
         this.eyes = eyes;
-    System.out.println("I am animal");
+        System.out.println("I am animal");
     }
 
     public void printEatInfo() {

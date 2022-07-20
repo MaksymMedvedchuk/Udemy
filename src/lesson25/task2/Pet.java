@@ -1,17 +1,14 @@
 package lesson25.task2;
 
 public class Pet extends Animal {
+    private final int TAILNUMBER = 1; //константа, щоб не могли змінити значення
+    private final int PAWNUMBER = 4;
     private String name;
-    private int tail;
-    private int paw;
 
-    public Pet(int eyes, String name, int tail, int paw) {
-        super(eyes);
+    public Pet(String name) {
+        super(2); //визиваю батьківський конструктов і передаю йому в парамент int знаяення 2;
         this.name = name;
-        this.tail = tail;
-        this.paw = paw;
         System.out.println("I am pet");
-        eyes = 2;
     }
 
     public void printRunInfo() {
@@ -30,19 +27,12 @@ public class Pet extends Animal {
         this.name = name;
     }
 
-    public int getTail() {
-        return tail;
+    public int getTAILNUMBER() {
+        return TAILNUMBER;
     }
 
-    public void setTail(int tail) {
-        this.tail = tail;
+    public int getPAWNUMBER() {
+        return PAWNUMBER;
     }
 
-    public int getPaw() {
-        return paw;
-    }
-
-    public void setPaw(int paw) {
-        this.paw = paw;
-    }
 }
