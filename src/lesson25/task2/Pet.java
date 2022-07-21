@@ -1,8 +1,8 @@
 package lesson25.task2;
 
 public class Pet extends Animal {
-    private final int TAILNUMBER = 1; //константа, щоб не могли змінити значення
-    private final int PAWNUMBER = 4;
+    private final int tailNumber = 1; //константа, щоб не могли змінити значення
+    private final int pawNumber = 4;
     private String name;
 
     public Pet(String name) {
@@ -27,12 +27,12 @@ public class Pet extends Animal {
         this.name = name;
     }
 
-    public int getTAILNUMBER() {
-        return TAILNUMBER;
+    public int getTailNumber() {
+        return tailNumber;
     }
 
-    public int getPAWNUMBER() {
-        return PAWNUMBER;
+    public int getPawNumber() {
+        return pawNumber;
     }
 
 }

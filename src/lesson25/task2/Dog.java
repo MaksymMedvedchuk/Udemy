@@ -8,7 +8,7 @@ public class Dog extends Pet {
     }
 
     public void printPlayInfo() {
-        System.out.println("Dogs play");
+        System.out.println("Dog plays");
     }
 }
 
