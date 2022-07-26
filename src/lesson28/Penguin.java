@@ -1,4 +1,4 @@
-package lesson27;
+package lesson28;
 
 public class Penguin extends Bird {
 
@@ -23,7 +23,7 @@ public class Penguin extends Bird {
 
     @Override
     public void speak() {
-        super.speak(); //якщо тут закоментувати, то вивидеться трохи інший перелік
+        super.speak();
         System.out.println("Penguins can't sing like nightingales");
     }
 }

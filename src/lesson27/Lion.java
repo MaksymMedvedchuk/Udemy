@@ -6,17 +6,17 @@ package lesson27;
     }
 
     @Override
-    void printEatInfo() {
+    void eat() {
         System.out.println("Lion as like anybody predator like meat");
     }
 
     @Override
-    void printSleepInfo() {
+    void sleep() {
         System.out.println("Bigger part of the day lion sleeps");
     }
 
      @Override
-     void printRunInfo() {
+     void run() {
          System.out.println("Lion isn't the most faster cat");//в завданні не було, але створив, була помилка що клас треба зробити абстрактним чи
      //перезаписати з класа Mammal метод printRunInfo
 

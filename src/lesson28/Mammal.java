@@ -1,4 +1,4 @@
-package lesson27;
+package lesson28;
 
 abstract class Mammal extends Animal implements Speakable {
 

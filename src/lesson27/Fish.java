@@ -5,10 +5,10 @@ package lesson27;
         super(name);//назначення змінно name
     }
 
-    abstract void printSwimInfo();
+    abstract void swim();
 
     @Override
-    public void printSleepInfo() { //перезаписав метод з Animal, вся правила виконані по оверайдінгу
+    public void sleep() { //перезаписав метод з Animal, вся правила виконані по оверайдінгу
         System.out.println("It is always interesting to watch how the fish sleep");
     }
 }
